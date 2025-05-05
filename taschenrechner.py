@@ -19,6 +19,7 @@ def berechne():
     a = input()
     op = input()
     b = input()
+    
 
 
     #zahl oder text erkennung&umwandlung a
@@ -84,7 +85,8 @@ def berechne():
 
 
 start()
+		
 
 #test
 #testPC
-
+#testIPad
