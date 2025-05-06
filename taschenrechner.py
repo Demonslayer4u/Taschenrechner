@@ -16,9 +16,9 @@ def berechne():
     global ans
 
     #zahlen&op abfragen
-    a = input()
-    op = input()
-    b = input()
+    a = input("Erste Zahl:")
+    op = input("Rechenzeichen (+ - * /):")
+    b = input("Zweite Zahl:")
     
 
 
