@@ -72,7 +72,7 @@ def berechne():
 
         # ergebnis wird ausgegeben
         print("Ergebnis:", ergebnis)
-
+        start()
     except:
         print("Syntax-Error")
 
