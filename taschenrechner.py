@@ -57,13 +57,15 @@ def berechne():
             start()
 
     #rechnung durch erkennung d rechenzeichens
-    if op == '+':
+    try:
+        op = str(op)
+     if op == '+':
         ergebnis = A + B
-    elif op == '-':
+     elif op == '-':
         ergebnis = A - B
-    elif op == '*':
+     elif op == '*':
         ergebnis = A * B
-    elif op == '/':
+     elif op == '/':
         #teilung d 0
         if B == 0:
             print("Math-Error")
@@ -71,16 +73,21 @@ def berechne():
         else:
             ergebnis = A / B
 
-    else:
+     else:
         print("Syntax-Error")
         start()
 
 
-    #ans wird gespeichert
-    ans = ergebnis
+     #ans wird gespeichert
+     ans = ergebnis
+
+    
 
     #ergebnis wird ausgegeben
-    print("Ergebnis:", ergebnis)
+     print("Ergebnis:", ergebnis)
+
+    except:
+        print("Syntax-Error")
     
 
 
