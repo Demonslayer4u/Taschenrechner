@@ -11,10 +11,10 @@ run = ["sh", "-c", "/run"]
 runButton = "Run Python"
 
 [[workflows.workflow]]
-name = "Run Python"
-author = 42348526
+name = "Run"
 mode = "sequential"
+author = 42348526
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python taschenrechner.py"
+args = "taschenrechner.py"
