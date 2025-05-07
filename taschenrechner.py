@@ -9,6 +9,7 @@ B = None
 ergebnis = None
 
 
+
 def start():
     global syntaxerror
     global matherror
@@ -16,6 +17,7 @@ def start():
     matherror = 0
     print("Taschenrechner")
     abfrage()
+
 
 
 def menu():
@@ -32,6 +34,8 @@ def menu():
         abfrage()
     else:
         menu()
+
+
 
 def abfrage():
     global a
@@ -68,8 +72,7 @@ def umwandeln():
 
     A = None
     B = None
-
-
+    
 
     # zahl oder text erkennung&umwandlung a
     try:
@@ -94,7 +97,6 @@ def umwandeln():
             ergebnisausgabe()
 
 
-
     # zahl oder text erkennung&umwandlung b
     try:
         b = float(b)
@@ -113,7 +115,6 @@ def umwandeln():
 
 
 
-
 def rechnen():
     global ans
     global syntaxerror
@@ -125,6 +126,7 @@ def rechnen():
     global B
     global ergebnis
 
+    
     # rechnung durch erkennung d rechenzeichens
     try:
         op = str(op)
@@ -154,12 +156,14 @@ def rechnen():
         ergebnisausgabe()
 
 
+
 def ergebnisausgabe():
     global ergebnis
     global syntaxerror
     global matherror
     global ans
 
+    
     # ans wird gespeichert
     ans = ergebnis
     print("ans changed successful ...")
